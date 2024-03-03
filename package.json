@@ -1,13 +1,13 @@
 {
   "name": "@spuq/qdevice-node-red",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node-RED node for communication with Qcom-based hardware modules",
   "author": "Sanne 'SpuQ' Santens",
   "license": "ISC",
   "dependencies": {
     "qdevice": "^2.0.3"
   },
-  "main": "index.js",
+  "main": "qdevice-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
