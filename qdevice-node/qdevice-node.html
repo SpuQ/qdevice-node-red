@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	RED.nodes.registerType('qdevice-node',{
+	RED.nodes.registerType('Qdevice',{
 		category: 'hardware',
 		color: '#ffffff',
 		defaults: {
@@ -10,12 +10,12 @@
 		outputs:1,
 		icon: "microchip-solid.svg",
 		label: function() {
-			return this.name||"qdevice-node";
+			return this.name||"Qdevice";
 		},
 	});
 </script>
 
-<script type="text/x-red" data-template-name="qdevice-node">
+<script type="text/x-red" data-template-name="Qdevice">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Sensor" />
@@ -26,6 +26,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="qdevice-node">
+<script type="text/x-red" data-help-name="Qdevice">
     <p>NodeRED node for interaction with Qcom-based hardware modules.</p>
 </script>

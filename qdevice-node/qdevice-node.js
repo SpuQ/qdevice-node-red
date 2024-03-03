@@ -11,7 +11,7 @@
  */
 
 module.exports = function(RED) {
-	console.log("registering qdevice-node");
+	console.log("registering Qdevice");
 	const Qdevice = require('qdevice');
 
 	function Qdevice_node(config){
@@ -99,6 +99,6 @@ module.exports = function(RED) {
 		}
 	}
 
-	RED.nodes.registerType("qdevice-node", Qdevice_node);
-	console.log("qdevice-node registered");
+	RED.nodes.registerType("Qdevice", Qdevice_node);
+	console.log("Qdevice registered");
 }
