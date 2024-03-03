@@ -1,6 +1,6 @@
 {
-  "name": "@spuq/qdevice-node-red",
-  "version": "1.1.5",
+  "name": "qdevice-node-red",
+  "version": "1.1.8",
   "description": "Node-RED node for communication with Qcom-based hardware modules",
   "author": "Sanne 'SpuQ' Santens",
   "license": "ISC",
@@ -19,10 +19,19 @@
   ],
   "node-red": {
     "nodes:": {
-      "qdevice-node": "qdevice-node/qdevice-node.js"
+      "Qdevice": "qdevice-node/qdevice-node.js"
     }
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpuQ/qdevice-node-red.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpuQ/qdevice-node-red/issues"
+  },
+  "homepage": "https://github.com/SpuQ/qdevice-node-red#readme"
 }

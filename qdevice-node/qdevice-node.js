@@ -12,7 +12,7 @@
 
 module.exports = function(RED) {
 	console.log("registering Qdevice");
-	const Qdevice = require('qdevice');
+	let Qdevice = require('qdevice');
 
 	function Qdevice_node(config){
         RED.nodes.createNode(this,config);
