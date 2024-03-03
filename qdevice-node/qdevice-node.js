@@ -24,7 +24,7 @@ module.exports = function(RED) {
 
         // Create a new Qdevice with the name
         // passed in the Node-RED configuration.
-		let device = new Qdevice(config.module)
+		let device = new Qdevice(config.module);
 
         // When the hardware module is connected
         // to the host, let everyone know.
@@ -40,7 +40,7 @@ module.exports = function(RED) {
 
         // When the hardware module is disconnected
         // from the host, let everyone know.
-        device.on('connected', () =>{
+        device.on('disconnected', () =>{
             console.log("Qdevice '"+config.module+"' disconnected.");
             status_indicator('disconnected');
             const msg = {
