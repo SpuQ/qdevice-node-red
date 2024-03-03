@@ -1,21 +1,27 @@
 {
   "name": "@spuq/qdevice-node-red",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node-RED node for communication with Qcom-based hardware modules",
   "author": "Sanne 'SpuQ' Santens",
   "license": "ISC",
   "dependencies": {
     "qdevice": "^2.0.3"
   },
-  "main": "qdevice-node.js",
+  "main": "qdevice-node/qdevice-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Qcom",
     "Qdevice",
-    "hardware"
+    "hardware",
+    "node-red"
   ],
+  "node-red": {
+    "nodes:": {
+      "qdevice-node": "qdevice-node/qdevice-node.js"
+    }
+  },
   "publishConfig": {
     "access": "public"
   }
